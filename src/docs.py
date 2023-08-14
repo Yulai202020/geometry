@@ -1,4 +1,7 @@
+import os
 import drawsvg as draw
+
+head, tail = os.path.split("/tmp/d/a.dat")
 
 d = draw.Drawing(1000, 800, origin = 'center')
 

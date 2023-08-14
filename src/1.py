@@ -1,5 +1,9 @@
 from lib import Point
+from pathlib import Path
+
 import drawsvg as draw
+
+file_name = Path(__file__).stem
 
 d = draw.Drawing(1000, 800, origin = 'center')
 
@@ -24,10 +28,11 @@ d.append(draw.Text('C', 10, -160, 20, fill='blue'))  # 8pt text at (-10, -35)
 d.append(draw.Text('D', 10, -50, 0, fill='blue'))  # 8pt text at (-10, -35)
 
 # Draw points
+
 d.append(Point(50, -40, 2)) # A
 d.append(Point(-100, -40, 2)) # B
 d.append(Point(-148, 23, 2)) # C
 d.append(Point(-53, -7, 2)) # D
 
-# save image
-d.save_svg('../example.svg')
+# Save image
+d.save_svg(f"../{file_name}.svg")
