@@ -32,7 +32,7 @@ d.append(Text_('D', -57, -2))
 d.append(Point(100, -50))   # A
 d.append(Point(0, -50))     # B
 d.append(Point(40, -30))    # C
-d.append(Point(-48, -1))   # D
+d.append(Point(-48, -1))    # D
 
 # Save image
 d.save_svg(f"../{file_name}.svg")
