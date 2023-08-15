@@ -1,3 +1,6 @@
-from drawsvg import Circle
-def Point(x, y, r):
-    return Circle(x, y, r, fill = "green")
+from drawsvg import Circle, Text
+def Point(x: int, y: int, r: int = 2, fill: str = "green"):
+    return Circle(x, y, r, fill = fill)
+
+def Text_(text: str , x: int, y: int, fill: str = 'blue'):
+    return Text(text, 10, x, y, fill = fill)
